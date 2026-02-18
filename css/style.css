@@ -1,0 +1,134 @@
+/** Definindo Fontes **/
+
+@font-face {
+    font-family: "Unbounded";
+    src: url("/projeto-tecboard/fonts/Unbounded-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url("/projeto-tecboard/fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/** CSS Reset simples **/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #0E1014;
+    color: #F5F5F5;
+}
+
+nav{
+    margin: 70px auto 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 210px;
+    height: 34px;
+}
+
+.switch:hover{
+    cursor: pointer;
+}
+
+
+section {
+    width: 792px;
+    margin: 0 auto;
+}
+
+section a{
+    font-family: "Poppins", "sans-serif";
+    color: #FFFFFF;
+    font-size: 24px;
+    text-decoration: none;
+    background-color: #9747FF;
+    display: block;
+    width: 340px;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    border-radius: 36px;
+    margin: 40px auto;
+}
+
+section a:hover{
+    background-color: #8233E8;
+}
+
+h1{
+    font-family: "Unbounded", "sans-serif";
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+h1  span{
+    color: #9747FF
+}
+
+p{
+    font-family: "Poppins", "sans-serif";
+    font-size: 24px;
+    text-align: center;
+}
+
+.celulares{
+    display: block;
+  
+    margin: 0 auto;
+}
+
+@media(max-width: 768px){
+    
+    nav {
+        margin: 60px auto 70px;
+    }
+
+    section {
+        width: 648px;
+    }
+
+    .celulares{
+        width: 648px;
+    }
+}
+
+@media(max-width: 375px) {
+
+    nav {
+        margin: 32px auto 54px;
+    }
+
+    section {
+        width: 341px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+    
+    p {
+        font-size: 20px;
+    }
+
+    section a {
+        font-size: 20px;
+        width: 251px;
+    }
+
+    .celulares{
+        width: 341px;
+    }
+}
